@@ -14,7 +14,6 @@ export const Container = styled.div`
         flex-direction: row;
         align-items: center;
 
-
         svg{
             margin-right: 10px;
         }

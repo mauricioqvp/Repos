@@ -7,7 +7,6 @@ import Repositorio from './pages/Repositorio';
 function Rotas(){
   return(
       <>
-      <p>Rotas</p>
         <BrowserRouter>
         <Routes>
             <Route exact path="/" element={<Main />} />
