@@ -49,7 +49,8 @@ const animate = keyframes`
 export const SubmitButton = styled.button.attrs(props => ({
     type: 'submit',
     disabled: props.loading,
-}))`
+}))
+`
     background: #0D2636;
     border: 0;
     border-radius: 4px;
@@ -71,4 +72,37 @@ export const SubmitButton = styled.button.attrs(props => ({
         }
         `
     }
+`;
+
+export const List = styled.ul`
+    list-style: none;
+    margin-top: 20px;
+
+    li{
+        padding: 15px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        & + li{
+            border-top: 1px solid #EEE;
+        }
+
+        a{
+            color: #0d260d;
+            text-decoration: none;
+        }
+    }
+`;
+
+export const DeleteButton = styled.button.attrs({
+    type: 'button'
+})`
+    background: transparent;
+    color: #0d2636;
+    border: 0;
+    padding: 8px 7px;
+    outline: 0;
+    border-radius: 4px;
 `;
